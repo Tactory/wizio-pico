@@ -251,7 +251,9 @@ def add_tinyusb(env):
     USB_DIR = join( env.framework_dir, env.sdk, "lib", "tinyusb", "src" )
     for define in env.get("CPPDEFINES"):
         if "USB" in define:
-            env.Append( CPPDEFINES = [ "CFG_TUSB_MCU=OPT_MCU_RP2040", "CFG_TUSB_OS=OPT_OS_PICO" ], CPPPATH = [ USB_DIR ]  )
+            if not any("CFG_TUSB_OS" in s for s in env.get("CPPDEFINES")):
+                env.Append(CPPDEFINES=["CFG_TUSB_OS=OPT_OS_PICO"])
+            env.Append( CPPDEFINES = [ "CFG_TUSB_MCU=OPT_MCU_RP2040"], CPPPATH = [ USB_DIR ]  )
             if "PICO_USB_HOST" in define: 
                 #[ini] build_flags = -D PICO_USB_HOST ... load lib as host      
                 print('  * TINYUSB      : HOST')
