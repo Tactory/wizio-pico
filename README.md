@@ -1,22 +1,24 @@
 ## Raspberry Pi Pico RP2040 - PlatformIO ( Pico-SDK & Arduino )
 
 **A few words in the beginning**
-* [**Due to Raspberry Pi Pico Team's bad attitude towards the project**](https://github.com/Wiz-IO/wizio-pico/wiki#a-lyrical-digression) <br>
-**I won't work hard or maybe I won't update fast<br><br>**
+
+I won't add support for new SDK versions ( > 1.40 ) - I don't have a muse...
+<br>Half a year ago I offered to Raspberry Pi ORG
+<br>platform ( 90% ready ) to support [all their products](https://www.linkedin.com/posts/georgi-angelov-33aa43b0_platformio-activity-6992131002923905024-m2mP?utm_source=share&utm_medium=member_desktop) ( etc ... [Arduino](https://www.linkedin.com/posts/georgi-angelov-33aa43b0_platformio-arduino-raspberry-activity-6993604847698665472-xUBF?utm_source=share&utm_medium=member_desktop), [microPython](https://www.linkedin.com/posts/georgi-angelov-33aa43b0_platformio-micropython-activity-6990577993874067456-E1pO?utm_source=share&utm_medium=member_desktop) )
+<br>They still have no interest...
+
 * **Version: 1.1.1** The project is a work in progress, there may be bugs...
 * [Look here, if there is something new](https://github.com/Wiz-IO/wizio-pico/wiki#last-news) 
 * This project is based on [**PICO-SDK**](https://github.com/raspberrypi/pico-sdk)
 * **PICO-SDK** _( the file organization has been restructured to be flexible and have a fast compilation )_
-* * **default SDK 1.4.0** ( backup  1.3.1 ) 
-* * Support and Pico W ( WiFi ) board - not tested
+* * **default SDK 1.4.0** 
+* * Support and Pico W ( WiFi ) board - not tested - I not have W board
 * **Frameworks**
 * * Baremetal ( pico-sdk, C/C++ ) _baremetal is just a name for pico-sdk here_
 * * Arduino ( in progress... )
 * **Debug** ( in progress... )
 * * [PICOPROBE](https://github.com/Wiz-IO/wizio-pico/wiki/DEBUG#picoprobe) ( Windows for now )
 * * CMSIS-DAP [( Windows for now )](https://www.youtube.com/watch?v=SdpsmgRp5Co)
-* **Libraries** [FreeRTOS](https://github.com/Wiz-IO/wizio-pico/wiki/COMMON#freertos), FatFS, littlefs ... etc
-* Basic **[File System](https://github.com/Wiz-IO/wizio-pico/wiki/COMMON#file-system--vfs--virtual-file-system-)** ( RAM disk, FLASH disk, SD card )
 * [**READ WIKI**](https://github.com/Wiz-IO/wizio-pico/wiki/) 
 * [Framework code](https://github.com/Wiz-IO/framework-wizio-pico)
 * [Baremetal Examples](https://github.com/Wiz-IO/wizio-pico-examples/tree/main/baremetal)
