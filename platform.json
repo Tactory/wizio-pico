@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wiz-IO/wizio-pico.git"
+    "url": "https://github.com/nstansbury/wizio-pico"
   },
   "version": "1.1.1",
   "packageRepositories": [
@@ -33,7 +33,7 @@
   "packages": {
     "framework-wizio-pico": {
         "type": "framework",
-        "version": "https://github.com/Wiz-IO/framework-wizio-pico.git"
+        "version": "https://github.com/nstansbury/framework-wizio-pico"
     },
     "toolchain-gccarmnoneeabi": {
         "owner": "platformio",
@@ -42,12 +42,12 @@
     },
     "tool-wizio-pico": {
         "type": "uploader",
-        "version": "https://github.com/Wiz-IO/tool-wizio-pico.git"
+        "version": "https://github.com/nstansbury/tool-wizio-pico"
     }, 
     "tool-pico-openocd": {
       "optional": true,
       "type": "debugger",
-      "version": "https://github.com/Wiz-IO/tool-pico-openocd"
+      "version": "https://github.com/nstansbury/tool-pico-openocd"
     } 
 
   }
